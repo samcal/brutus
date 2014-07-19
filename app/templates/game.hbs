@@ -1,0 +1,21 @@
+{{#if inGame}}
+  {{#if hasStarted}}
+    The game has started
+  {{else}}
+    <h1 class="gray">Game starts at:</h1>
+    <h1>12:00 AM on June 6th</h1>
+
+    <div class="countdown">00:13:24.22</div>
+    until start<br />
+
+    {{#if isCreator}}
+      <input type="button" value="start" />
+    {{/if}}
+  {{/if}}
+{{else}}
+  <h1>Join {{model.name}}</h1>
+
+  <input type="button" value="Yes" />
+
+  <div class="bottom-button">nope, go back</div>
+{{/if}}

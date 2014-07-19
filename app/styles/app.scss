@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+$splash: #4a90e2;
+
+* {
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  text-align: center;
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+img.logo {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  color: $splash;
+  font-weight: 500;
+}
+
+h1.gray {
+  color: gray;
+}
+
+.bottom-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  color: gray;
+  font-weight: 500;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+form {
+  margin-top: 70px;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid $splash;
+  color: $splash;
+  outline: none;
+  font-size: 30px;
+  max-width: 90%;
+  padding: 8px;
+  margin-top: 15px;
+}
+
+input[type="button"], input[type="submit"] {
+  border: none;
+  background: $splash;
+  color: white;
+  max-width: 80%;
+  width: 300px;
+  height: 70px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: $splash;
+}
+
+::-moz-placeholder {
+  color: $splash;
+}
+
+ul.games-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid gray;
+    font-size: 30px;
+    font-weight: 300;
+    color: gray;
+    text-align: left;
+    padding: 20px;
+
+    span {
+      color: $splash;
+      float: right;
+      font-weight: 300;
+    }
+  }
+
+  li:first-of-type {
+    border-top: 1px solid gray;
+  }
+}
+
+.countdown {
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 200px;
+}

@@ -1,0 +1,9 @@
+<input type="button" value="create game" {{action 'newGame'}} />
+
+<ul class="games-list">
+  {{#each}}
+    <li>
+      {{name}} <span>join</span>
+    </li>
+  {{/each}}
+</ul>

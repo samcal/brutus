@@ -1,0 +1,7 @@
+<form>
+  {{input type="text" placeholder="Name" value=name}}<br />
+  {{input type="password" placeholder="Password" value=password}}<br />
+  <input type="submit" value="Login" {{action 'login'}} />
+</form>
+
+{{outlet}}
