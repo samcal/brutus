@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
   }.property(),
 
   timer: function() {
-    return "00:13:24.22"
+    return "00:13:24.22";
   }.property(),
 
   startDate: function() {

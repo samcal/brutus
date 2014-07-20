@@ -5,4 +5,4 @@ var Game = DS.Model.extend({
   startTime: DS.attr('date'),
 });
 
-export default Game
+export default Game;
