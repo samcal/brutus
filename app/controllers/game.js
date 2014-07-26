@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
   }.property(),
 
   inGame: function() {
-    return true;
+    return false;
   }.property(),
 
   isCreator: function() {
