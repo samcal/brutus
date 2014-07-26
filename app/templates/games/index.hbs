@@ -3,7 +3,7 @@
 <ul class="games-list">
   {{#each}}
     <li>
-      {{name}} <span>join</span>
+      {{name}} <span>{{#linkTo 'game' id}}join{{/linkTo}}</span>
     </li>
   {{/each}}
 </ul>

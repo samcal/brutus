@@ -13,9 +13,9 @@
     {{/if}}
   {{/if}}
 {{else}}
-  <h1>Join {{model.name}}</h1>
+  <h1>Join <span class="gray">{{model.name}}</span></h1>
 
   <input type="button" value="Yes" />
 
-  <div class="bottom-button">nope, go back</div>
+  <div class="bottom-button">{{#linkTo 'games.index' class='gray'}}nope, go back{{/linkTo}}</div>
 {{/if}}

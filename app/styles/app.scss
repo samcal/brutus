@@ -7,6 +7,16 @@ $splash: #4a90e2;
   font-weight: 100;
 }
 
+a, a:hover {
+  color: $splash;
+  text-decoration: none;
+}
+
+a.gray, a.gray:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
 .container {
   text-align: center;
   padding-top: 50px;
@@ -29,15 +39,18 @@ h1.gray {
   color: gray;
 }
 
+span.gray {
+  color: gray;
+  font-weight: 500;
+}
+
 .bottom-button {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 20px;
-  color: gray;
   font-weight: 500;
   font-size: 30px;
-  text-decoration: underline;
 }
 
 form {
@@ -67,6 +80,7 @@ input[type="button"], input[type="submit"] {
   margin-top: 20px;
   border-radius: 0;
   -webkit-appearance: none;
+  cursor: pointer;
 }
 
 ::-webkit-input-placeholder {
