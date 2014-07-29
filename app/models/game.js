@@ -3,7 +3,7 @@ import DS from 'ember-data';
 var Game = DS.Model.extend({
   name: DS.attr('string'),
   startTime: DS.attr('date'),
-  players: DS.hasMany('user')
+  players: DS.hasMany('user', { async: true })
 });
 
 Game.reopenClass({
